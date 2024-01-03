@@ -1,0 +1,22 @@
+:root{
+    --lm-bg: #f6f8ff;
+    --lm-bg-cont:#fefefe;
+    --lm-text:#4b6a9b;
+    --lm-text-bold:#2b3442;
+    --lm-btn-mode:#697c9a;
+    --lm-name-git-btn-seach:#0079ff;
+    --lm-finder:#222731;
+
+    --dm-text:#ffffff;
+    --dm-profile-inf:#141d2f;
+    --dm-main:#1e2a47;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+  }
+

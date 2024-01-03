@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;400;600&family=Lato:wght@300;400;700&family=Montserrat:wght@200;300;400;700&family=Roboto:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>devfinder</h1>
+      <div id="btn">
+        <p id="mode_bnt_text"></p>
+        <img id="mode-icon" src="./assets/icon-moon.svg" alt="">
+      </div>
+    </header>
+    <main>
+      <div id="app">
+        <section class="searchbar_container">
+          <input type="search" name="user_input" placeholder="Search Github username...">
+          <div class="error">
+            <p id="no-results">No results</p>
+            <button class="btn_search" id="submit">Search</button>
+          </div>
+        </section>
+
+        <section class="section_profile_wrapper">
+          <div class="content_profile">
+            <div class="header_profile">
+              <img id="avatar" src="./assets/perf.png" alt="">
+              <div class="profile_info">
+                <div class="profile_name">
+                  <h2 id="name">0</h2>
+                  <p id="user"></p>
+                </div>
+                <p id="date"></p>
+              </div>
+            </div>
+            <p id="bio"></p>
+
+            <div class="stats_profile_wrapper">
+              <div class="stat_profile">
+                <p class="stat_title">Repos</p>
+                <p id="repos" class="stat_vallue"></p>
+              </div>
+              <div class="stat_profile">
+                <p class="stat_title">Followers</p>
+                <p id="followers" class="stat_vallue"></p>
+              </div>
+              <div class="stat_profile">
+                <p class="stat_title">Following</p>
+                <p id="following" class="stat_vallue"></p>
+              </div>
+            </div>
+
+            <div class="links_profile_wrapper">
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  
+
+ </body>
+</html>
