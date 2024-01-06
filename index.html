@@ -18,18 +18,18 @@
     <header>
       <h1>devfinder</h1>
       <div id="btn">
-        <p id="mode_bnt_text"></p>
-        <img id="mode-icon" src="./assets/icon-moon.svg" alt="">
+        <p id="mode_bnt_text">DARK</p>
+        <img id="mode_icon" src="./assets/icon-moon.svg" alt="">
       </div>
     </header>
     <main>
       <div id="app">
         <section class="searchbar_container">
-          <input type="search" name="user_input" placeholder="Search Github username...">
+          <input type="search" id="input" name="user_input" placeholder="Search Github username...">
           <div class="error">
             <p id="no-results">No results</p>
-            <button class="btn_search" id="submit">Search</button>
           </div>
+          <button class="btn_search" id="submit">Search</button>
         </section>
 
         <section class="section_profile_wrapper">

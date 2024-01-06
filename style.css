@@ -1,22 +1,122 @@
-:root{
-    --lm-bg: #f6f8ff;
-    --lm-bg-cont:#fefefe;
-    --lm-text:#4b6a9b;
-    --lm-text-bold:#2b3442;
-    --lm-btn-mode:#697c9a;
-    --lm-name-git-btn-seach:#0079ff;
-    --lm-finder:#222731;
+:root {
+  --lm-bg: #f6f8ff;
+  --lm-bg-cont: #fefefe;
+  --lm-text: #4b6a9b;
+  --lm-text-bold: #2b3442;
+  --lm-btn-mode: #697c9a;
+  --lm-name-git-btn-seach: #0079ff;
+  --lm-finder: #222731;
+  --lm-btn-seach-hover:#60abff
 
-    --dm-text:#ffffff;
-    --dm-profile-inf:#141d2f;
-    --dm-main:#1e2a47;
+  --dm-text: #ffffff;
+  --dm-profile-inf: #141d2f;
+  --dm-main: #1e2a47;
 
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Space Mono", monospace;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
 
+body {
+  background-color: var(--lm-bg);
+  font-size: 13px;
+  color: var(--lm-text);
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  width: 327px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+}
+
+#app{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  letter-spacing: 2.5px;
+  color: var(--lm-text);
+  font-weight: bold;
+}
+#btn:hover{
+  cursor: pointer;
+}
+.mode_icon{
+  display: flex;
+  align-items: center;
+}
+.searchbar_container{
+  position: relative;
+  background-color: var(--lm-bg-cont);
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  display: flex;
+  height: 100%;
+  padding: 6px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./assets/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 24px;
+  background-position-y: center;
+  background-size: 20px;
+}
+.searchbar_container img{
+  height: 20px;
+  width: 20px;
+  padding: 0 10px 0 16px;
+}
+ #input{
+  border: none;
+  width: 80%;
+  outline: none;
+  background: none;
+  color: var(--lm-text);
+  padding-left: 50px;
+ }
+ #input::placeholder{
+  color: var(--lm-text);
+  letter-spacing: -0.5px;
+  font-size: 13px;
+ }
+ .btn_search{
+  min-width: 85px;
+  padding: 12px 6px;
+  background-color: var(--lm-name-git-btn-seach);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+ }
+.btn_search:hover{
+  cursor: pointer;
+  background-color:var(--lm-btn-seach-hover) ;
+}
+.btn_search:active{
+  transform: scale(0.975);
+}
