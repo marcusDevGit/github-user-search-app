@@ -6,7 +6,7 @@
   --lm-btn-mode: #697c9a;
   --lm-name-git-btn-seach: #0079ff;
   --lm-finder: #222731;
-  --lm-btn-seach-hover:#60abff
+  --lm-btn-seach-hover:#60abff;
 
   --dm-text: #ffffff;
   --dm-profile-inf: #141d2f;
@@ -30,7 +30,7 @@ body {
   height: 100vh;
 }
 
-.container {
+#container {
   width: 327px;
   position: absolute;
   top: 50%;
@@ -52,8 +52,9 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
-#btn{
+#btn_mode{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,10 +63,10 @@ header{
   color: var(--lm-text);
   font-weight: bold;
 }
-#btn:hover{
+#btn_mode:hover{
   cursor: pointer;
 }
-.mode_icon{
+#mode_icon{
   display: flex;
   align-items: center;
 }
@@ -85,12 +86,6 @@ header{
   background-position-y: center;
   background-size: 20px;
 }
-
-.searchbar_container img{
-  height: 20px;
-  width: 20px;
-  padding: 0 10px 0 16px;
-}
  #input{
   border: none;
   width: 80%;
@@ -104,6 +99,11 @@ header{
   letter-spacing: -0.5px;
   font-size: 13px;
  }
+ /* .searchbar_container img {
+  height: 20px;
+  width: 20px;
+  padding: 0 10px 0px 16px;
+} */
  .error{
   display: no;
   margin-left: 10px;
