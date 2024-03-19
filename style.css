@@ -105,10 +105,15 @@ header{
   padding: 0 10px 0px 16px;
 } */
  .error{
-  display: no;
+  /* display:none;
   margin-left: 10px;
   color: #ff0000;
+  font-weight: bold; */
+  position: absolute;
+  color: #ff0000;
   font-weight: bold;
+  right: 10px;
+  top: 25px;
  }
  .btn_search{
   min-width: 85px;
@@ -148,11 +153,11 @@ header{
   width: 70px;
   border-radius: 90px;
 }
-.profile_info{
+/* .profile_info{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 .profile_name{
   display: flex;
   flex-direction: column;
@@ -205,4 +210,72 @@ header{
 .git_icon{
   width: 15px;
   filter: var(--lm-text);
+}
+
+/*tablet*/
+@media screen and (min-width: 768px){
+  #container{
+    width: 573px;
+  }
+  .searchbar_container{
+    padding: 10px;
+  }
+  #input{
+    font-size: 18px;
+    width: 75%;
+  }
+  #input::placeholder {
+    font-size: 18px;
+  }
+  .btn_search{
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+  .error{
+    font-size: 15px;
+    top: -30px;
+  }
+  #app{
+    gap: 24px;
+  }
+  .section_profile_wrapper{
+    padding: 40px;
+  }
+  .header_profile{
+    margin-bottom: 0;
+  }
+  #avatar{
+    width: 118px;
+  }
+  .content_profile{
+    gap: 30px;
+  }
+  .profile_info{
+    justify-content: center;
+  }
+  .profile_name h2{
+    font-size: 26px;
+  }
+  #user{
+    font-size: 16px;
+  }
+  #date, #bio{
+    font-size: 15px;
+  }
+  .stats_repos_wrapper{
+    padding: 18px 32px;
+  }
+  .stats_repos{
+    text-align: start;
+  }
+  .stats_title{
+    font-size: 13px;
+  }
+  .stats_vallue{
+      font-size: 22px;
+  }
+  .git_info_links{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
