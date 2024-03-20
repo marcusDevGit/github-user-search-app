@@ -6,8 +6,9 @@
   --lm-btn-mode: #697c9a;
   --lm-name-git-btn-seach: #0079ff;
   --lm-finder: #222731;
+  --shadoww:0px 16px 30px -10px rgba(70, 96, 187, 0.2);
   --lm-btn-seach-hover:#60abff;
-
+  --icon: brightness(100%)
   --dm-text: #ffffff;
   --dm-profile-inf: #141d2f;
   --dm-main: #1e2a47;
@@ -74,7 +75,7 @@ header{
   position: relative;
   background-color: var(--lm-bg-cont);
   border-radius: 15px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  box-shadow: var(--shadoww);
   display: flex;
   height: 100%;
   padding: 6px;
@@ -135,7 +136,7 @@ header{
 .section_profile_wrapper{
   background-color: var(--lm-bg-cont);
   border-radius: 15px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+  box-shadow: var(--shadoww);
   padding: 24px;
 }
 .content_profile{
@@ -209,7 +210,10 @@ header{
 }
 .git_icon{
   width: 15px;
-  filter: var(--lm-text);
+  filter: var(--icon);
+}
+.active{
+  box-shadow: var(--shadoww);
 }
 
 /*tablet*/
