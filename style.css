@@ -53,7 +53,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 #btn_mode{
   display: flex;
@@ -100,21 +100,15 @@ header{
   letter-spacing: -0.5px;
   font-size: 13px;
  }
- /* .searchbar_container img {
-  height: 20px;
-  width: 20px;
-  padding: 0 10px 0px 16px;
-} */
+
  .error{
-  /* display:none;
-  margin-left: 10px;
-  color: #ff0000;
-  font-weight: bold; */
   position: absolute;
   color: #ff0000;
   font-weight: bold;
-  right: 10px;
-  top: 25px;
+  right: 93px;
+ }
+ .error p{
+  font-size: 12px;
  }
  .btn_search{
   min-width: 85px;
@@ -154,11 +148,7 @@ header{
   width: 70px;
   border-radius: 90px;
 }
-/* .profile_info{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
+
 .profile_name{
   display: flex;
   flex-direction: column;
@@ -218,6 +208,9 @@ header{
 
 /*tablet*/
 @media screen and (min-width: 768px){
+  header{
+    margin-top: 200px;
+  }
   #container{
     width: 573px;
   }
@@ -237,7 +230,7 @@ header{
   }
   .error{
     font-size: 15px;
-    top: -30px;
+    right: 130px;
   }
   #app{
     gap: 24px;
@@ -247,6 +240,7 @@ header{
   }
   .header_profile{
     margin-bottom: 0;
+    display: flex;
   }
   #avatar{
     width: 118px;
@@ -256,6 +250,7 @@ header{
   }
   .profile_info{
     justify-content: center;
+
   }
   .profile_name h2{
     font-size: 26px;
@@ -279,7 +274,55 @@ header{
       font-size: 22px;
   }
   .git_info_links{
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+  .git_link{
+    flex: 50%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  #container {
+    width: 730px;
+  }
+  .section_profile_wrapper {
+    position: relative;
+  }
+  .content_profile {
+    width: 480px;
+    margin-left: auto;
+    gap: 16px;
+  }
+  #avatar {
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+  }
+  .profile_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .profile_name {
+    gap: 2px;
+  }
+  #date {
+    padding-top: 10px;
+  }
+  .stats_repos_wrapper {
+    margin: 20px 0;
+  }
+  .error {
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+  #input {
+    width: 65%;
   }
 }
